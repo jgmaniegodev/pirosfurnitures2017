@@ -132,3 +132,11 @@ footer {
     opacity: 0;
     visibility: hidden;
 }
+@media (min-width: 320px) and (max-width: 650px) {
+  img.size-full {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    height: auto;
+  }
+}
