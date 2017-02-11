@@ -1,5 +1,7 @@
 <?php
 
+get_header();
+
 global $post;
 
 query_posts(array(
@@ -23,7 +25,7 @@ query_posts(array(
 
 ));
 
-get_header();
+
 
 ?>
 
