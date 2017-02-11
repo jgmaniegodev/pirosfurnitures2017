@@ -1,0 +1,183 @@
+$default-font: 'Droid Serif',
+serif;
+
+/* Font styles */
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+
+/* Text sizes */
+
+
+/* Default */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: 150%;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 12px 0;
+    padding-bottom: 12px;
+}
+
+h2 {
+    font-size: 2.4em;
+    margin: 10px 0;
+    padding-bottom: 10px;
+}
+
+
+h3 {
+    font-size: 1.8em;
+    margin: 8px 0;
+    padding-bottom: 8px;
+}
+
+h4 {
+    font-size: 1.4em;
+    margin: 8px 0;
+    padding-bottom: 8px;
+}
+
+h5 {
+    font-size: 1em;
+    margin: 8px 0;
+}
+
+h6 {
+    font-size: 0.7em;
+    margin: 8px 0;
+    padding-bottom: 8px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 150%;
+    margin: 1em 0;
+}
+
+.page-has-background {
+    .overlay-bg {
+        .inner-container {
+            color: #ffffff;
+        }
+    }
+}
+
+.entry-title {
+    border-bottom: 1px solid #8C8C8C;
+    text-align: center;
+}
+
+
+/* Screen, laptops, widescreens */
+
+@include breakpoint ( 1200px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        line-height: 150%;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.4em;
+    }
+    h3 {
+        font-size: 1.8em;
+    }
+    h4 {
+        font-size: 1.4em;
+    }
+    h5 {
+        font-size: 1em;
+    }
+    h6 {
+        font-size: 0.7em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Smartphone */
+@include breakpoint(320px 768px){
+    #services{
+        margin-bottom: 12px;
+    .service-item{
+        h5{
+            margin-bottom: 0;
+            margin-top: 0;
+            a{
+                padding: 12px 0;
+                display: block;
+                background: #ff0000;
+                border-bottom: 1px solid #ff6600;
+                color: #ffffff;
+                text-align: center;
+            }
+        }
+    }
+    }
+    .headline-container{
+        h1{
+            font-size: medium;
+        }
+    }
+}
+
+@include breakpoint(32px 667px){
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        line-height: 150%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    h4 {
+        font-size: 1.1em;
+    }
+    h5 {
+        font-size: 1em;
+    }
+    h6 {
+        font-size: 0.8em;
+    }
+    p {
+        font-size: 1em;
+    }
+}

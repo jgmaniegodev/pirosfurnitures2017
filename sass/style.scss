@@ -1,0 +1,134 @@
+/*
+THEME NAME: PIROS FURNITURES 2016
+DESCRIPTION: Piros Furnitures 2016 Theme is a original customized theme exclusively for Piros Furnitures. This theme shows elegance in showcasing the businesses services and portfolios. It has the feel of the current modern web design.
+VERSION: 1.0
+AUTHOR: NY Omega Designs
+AUTHOR URI: http://nyomegadesigns.com
+LICENSE: GNU General Public License v2 or later
+LICENSE URI: http://www.gnu.org/licenses/gpl-2.0.html
+TAGS: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+TEXT DOMAIN: piros-furnitures-2016
+*/
+@import "grids";
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "forms";
+@import "layout";
+@import "menu";
+@import "screen";
+@import "tablet";
+@import "mobile";
+html,
+body {
+    font-family: $default-font;
+    background: $light-brown;
+}
+* {
+    box-sizing: border-box;
+}
+header {}
+
+nav {}
+
+section {}
+
+aside {}
+
+footer {
+    text-align: center;
+}
+
+::selection {
+    background: $highlight;
+    color: $highlight-text;
+}
+
+#site {
+    background: $white;
+}
+
+
+/* HEADER */
+
+#headerbg-overlay {
+    background: #293643;
+    
+    #headerbg {
+        
+        
+        @include breakpoint($desktop){
+            background-color: $light-brown;
+        background-image: $headerbg;
+        }
+        @include breakpoint($responsive){
+            background-image: none;
+            background-color: #000000;
+        }
+        background-repeat: no-repeat;
+        background-size: cover;
+        header {
+            #branding {
+                background-color: $red;
+                max-width: 320px;
+                padding: 3% 2%;
+                position: relative;
+                z-index: 5;
+                @include breakpoint($responsive){
+                    margin: 0 auto;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                .logo-shadow {
+                    background: url('images/headerbg-overlay-shadow.png') no-repeat;
+                    width: 11px;
+                    height: 16px;
+                    position: absolute;
+                    top: 0;
+                    right: -11px;
+                }
+            }
+        }
+        nav {
+            background-color: $translucent-dark;
+            border-bottom: 1px solid $gray;
+            
+        }
+        #headline {
+            background: $translucent-dark;
+            color: #ffffff;
+            padding: 1em 0;
+        }
+    }
+}
+
+
+/* <id:headerbg-overlay> */
+
+
+/* SECTION */
+
+.page-has-background {
+    .overlay-bg {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 1em 0;
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 2% 0px;
+    border-top: 1px solid $light-gray;
+    .inner-container {}
+}
+
+#home {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}

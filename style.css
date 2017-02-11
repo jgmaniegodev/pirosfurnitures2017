@@ -1,0 +1,644 @@
+/*
+THEME NAME: PIROS FURNITURES 2016
+DESCRIPTION: Piros Furnitures 2016 Theme is a original customized theme exclusively for Piros Furnitures. This theme shows elegance in showcasing the businesses services and portfolios. It has the feel of the current modern web design.
+VERSION: 1.0
+AUTHOR: NY Omega Designs
+AUTHOR URI: http://nyomegadesigns.com
+LICENSE: GNU General Public License v2 or later
+LICENSE URI: http://www.gnu.org/licenses/gpl-2.0.html
+TAGS: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+TEXT DOMAIN: piros-furnitures-2016
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Piros Furnitures 2016 theme style variables */
+/* Font styles */
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: 700; }
+
+a {
+  text-decoration: none;
+  color: #ff0000; }
+
+/* Text sizes */
+/* Default */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 150%; }
+
+h1 {
+  font-size: 3em;
+  margin: 12px 0;
+  padding-bottom: 12px; }
+
+h2 {
+  font-size: 2.4em;
+  margin: 10px 0;
+  padding-bottom: 10px; }
+
+h3 {
+  font-size: 1.8em;
+  margin: 8px 0;
+  padding-bottom: 8px; }
+
+h4 {
+  font-size: 1.4em;
+  margin: 8px 0;
+  padding-bottom: 8px; }
+
+h5 {
+  font-size: 1em;
+  margin: 8px 0; }
+
+h6 {
+  font-size: 0.7em;
+  margin: 8px 0;
+  padding-bottom: 8px; }
+
+p {
+  font-size: 1em;
+  line-height: 150%;
+  margin: 1em 0; }
+
+.page-has-background .overlay-bg .inner-container {
+  color: #ffffff; }
+
+.entry-title {
+  border-bottom: 1px solid #8C8C8C;
+  text-align: center; }
+
+/* Screen, laptops, widescreens */
+@media (min-width: 1200px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 150%; }
+
+  h1 {
+    font-size: 3em; }
+
+  h2 {
+    font-size: 2.4em; }
+
+  h3 {
+    font-size: 1.8em; }
+
+  h4 {
+    font-size: 1.4em; }
+
+  h5 {
+    font-size: 1em; }
+
+  h6 {
+    font-size: 0.7em; }
+
+  p {
+    font-size: 1em; } }
+/* Smartphone */
+@media (min-width: 320px) and (max-width: 768px) {
+  #services {
+    margin-bottom: 12px; }
+    #services .service-item h5 {
+      margin-bottom: 0;
+      margin-top: 0; }
+      #services .service-item h5 a {
+        padding: 12px 0;
+        display: block;
+        background: #ff0000;
+        border-bottom: 1px solid #ff6600;
+        color: #ffffff;
+        text-align: center; }
+
+  .headline-container h1 {
+    font-size: medium; } }
+@media (min-width: 32px) and (max-width: 667px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 150%; }
+
+  h1 {
+    font-size: 2em; }
+
+  h2 {
+    font-size: 1.6em; }
+
+  h3 {
+    font-size: 1.3em; }
+
+  h4 {
+    font-size: 1.1em; }
+
+  h5 {
+    font-size: 1em; }
+
+  h6 {
+    font-size: 0.8em; }
+
+  p {
+    font-size: 1em; } }
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel],
+input[type=submit],
+textarea {
+  font-family: "Droid Serif", serif;
+  padding: 12px;
+  display: block;
+  font-size: 1em;
+  width: 100%; }
+
+iframe {
+  width: 100%; }
+
+input[type=submit],
+a.button {
+  color: #FFFFFF;
+  background: #ff0000;
+  border: none;
+  cursor: pointer; }
+  input[type=submit]:hover,
+  a.button:hover {
+    background: #ff6600; }
+
+* {
+  box-sizing: border-box; }
+
+#site {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+  overflow: hidden; }
+
+header {
+  min-height: 100px; }
+
+nav {
+  min-height: 42px; }
+
+#page-content {
+  min-height: 500px; }
+
+footer {
+  min-height: 180px; }
+
+.inner-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  padding: 0px 12px;
+  position: relative;
+  box-sizing: border-box; }
+
+section {
+  padding: 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  section:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.clear:after {
+  display: block;
+  content: " ";
+  height: 0;
+  clear: both; }
+
+#service-details {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 75%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+  #service-details #service-detail .service-title {
+    background: #ff0000;
+    color: #ffffff;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 18px 12px;
+    border-bottom: 5px solid #ba0000; }
+  #service-details #service-detail .service-item-container .service-thumb img {
+    width: 100%;
+    height: auto; }
+  #service-details #service-detail .service-item-container .service-text {
+    padding: 0px 12px; }
+    #service-details #service-detail .service-item-container .service-text p {
+      font-size: 0.9em; }
+
+@media (min-width: 768px) {
+  .col-5-12 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 41.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%; }
+
+  .col-7-12 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 58.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%; }
+
+  .col-6-12 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%; }
+
+  #headerbg-overlay {
+    padding-top: 28px; }
+
+  #branding {
+    top: -16px; }
+
+  nav {
+    margin-top: -16px; }
+
+  article {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    article:after {
+      content: " ";
+      display: block;
+      clear: both; }
+
+  .contact-sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 6;
+    padding: 8px 0;
+    width: 310px; }
+
+  .services-container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3em;
+    min-height: 500px; }
+    .services-container:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .services-container .services-menu {
+      width: 23.72881%;
+      float: left;
+      border-right: 2px solid #eeeeee;
+      text-align: right; }
+      .services-container .services-menu li h5 a {
+        display: block;
+        padding: 8px 12px;
+        color: #000000;
+        border-right: 3px solid #ffffff;
+        -webkit-transition: "background" 0.5s ease-in-out;
+        /* Safari */
+        transition: "background" 0.5s ease-in-out; }
+        .services-container .services-menu li h5 a:hover {
+          color: #ffffff;
+          background: #ff0000;
+          border-color: #ba0000; }
+    .services-container #service-details {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 75%;
+      float: left;
+      padding-left: 0.83333%;
+      padding-right: 0.83333%; }
+      .services-container #service-details #service-detail .service-item-container .service-thumb {
+        padding: 0px 12px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 58.33333%;
+        float: left;
+        padding-left: 0.83333%;
+        padding-right: 0.83333%; }
+      .services-container #service-details #service-detail .service-item-container .service-text {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 41.66667%;
+        float: left;
+        padding-left: 0.83333%;
+        padding-right: 0.83333%; } }
+@media (max-width: 768px) {
+  #service-details {
+    width: 100%;
+    padding: 12px 0; }
+
+  #headerbg-overlay {
+    padding-top: 0; }
+
+  .service-thumb {
+    padding: 0; } }
+/* default */
+@media (min-width: 768px) {
+  #menu-bar {
+    display: none; }
+
+  #navigation .inner-container {
+    /* Top-level */ }
+    #navigation .inner-container .primary-nav {
+      display: block !important; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    #navigation .inner-container {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto; }
+      #navigation .inner-container:after {
+        content: " ";
+        display: block;
+        clear: both; } }
+  @media (min-width: 768px) and (max-width: 768px) {
+    #navigation .inner-container {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      #navigation .inner-container:after {
+        content: " ";
+        display: block;
+        clear: both; } }
+@media (min-width: 768px) {
+    #navigation .inner-container ul.menu {
+      list-style: none;
+      margin: 0; }
+      #navigation .inner-container ul.menu > li {
+        position: relative;
+        display: inline-block;
+        margin: 0; }
+        #navigation .inner-container ul.menu > li > a {
+          color: #FFFFFF;
+          display: block;
+          padding: 24px 8px;
+          -webkit-transition: background 0.5s ease-in-out;
+          /* Safari */
+          transition: background 0.5s ease-in-out; }
+          #navigation .inner-container ul.menu > li > a:hover {
+            background: #FF0000; }
+      #navigation .inner-container ul.menu > li {
+        display: inline-block; }
+    #navigation .inner-container .primary-nav {
+      /* widescreem, laptops, etc. */ } }
+    @media (min-width: 768px) and (min-width: 768px) {
+      #navigation .inner-container .primary-nav {
+        width: 75%;
+        float: left; } }
+    @media (min-width: 768px) and (min-width: 720px) and (max-width: 1024px) {
+      #navigation .inner-container .primary-nav {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; } }
+@media (min-width: 768px) {
+    #navigation .inner-container .social-media-nav {
+      text-align: right;
+      /* widescreem, laptops, etc. */ } }
+    @media (min-width: 768px) and (min-width: 768px) {
+      #navigation .inner-container .social-media-nav {
+        width: 25%;
+        float: left; } }
+    @media (min-width: 768px) and (min-width: 720px) and (max-width: 1024px) {
+      #navigation .inner-container .social-media-nav {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; } }
+@media (min-width: 768px) {
+      #navigation .inner-container .social-media-nav .menu li {
+        width: 25%;
+        float: left;
+        text-align: center; } }
+/* Hides navigation links and site footer when infinite scroll is active */
+.infinite-scroll #navigation,
+.infinite-scroll.neverending #footer {
+  display: none; }
+
+/* Shows the footer again in case all posts have been loaded */
+.infinity-end.neverending #footer {
+  display: block; }
+
+/* Mobile */
+@media (max-width: 768px) {
+  #menu-bar {
+    display: block;
+    border: none;
+    padding: 12px 0;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 22px;
+    background: none;
+    border-bottom: 3px solid #ff0000;
+    outline: none; }
+    #menu-bar.active {
+      background: #ff0000; }
+
+  #navigation .primary-nav {
+    display: none;
+    position: relative;
+    background: #ffffff;
+    max-height: 100%;
+    overflow-y: auto;
+    font-size: 18px; }
+    #navigation .primary-nav ul.menu > li {
+      text-align: center; }
+      #navigation .primary-nav ul.menu > li a {
+        padding: 12px 0;
+        display: block;
+        border-bottom: 1px solid #fbfbfb; }
+
+  #social-media-menu {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    #social-media-menu:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    #social-media-menu li {
+      width: 25%;
+      float: left; }
+      #social-media-menu li a {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        color: #ffffff; }
+        #social-media-menu li a:hover {
+          background: #ff0000; }
+
+  .contact-sidebar {
+    margin-top: 8px;
+    display: block;
+    text-align: center !important;
+    color: #ffffff; }
+    .contact-sidebar p {
+      text-align: center !important; }
+    .contact-sidebar #flags {
+      margin: 0 auto;
+      float: none; } }
+/* Screen style */
+@media (min-width: 1024px) {
+  #headerbg-overlay #headerbg header #branding {
+    width: 570px; }
+
+  /* <id:headerbg-overlay> */
+  #sale-link {
+    position: absolute;
+    left: 360px;
+    top: 0;
+    opacity: 1; } }
+html,
+body {
+  font-family: "Droid Serif", serif;
+  background: #DADADA; }
+
+* {
+  box-sizing: border-box; }
+
+footer {
+  text-align: center; }
+
+::selection {
+  background: #FF0000;
+  color: #FFFFFF; }
+
+#site {
+  background: #FFFFFF; }
+
+/* HEADER */
+#headerbg-overlay {
+  background: #293643; }
+  #headerbg-overlay #headerbg {
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      #headerbg-overlay #headerbg {
+        background-color: #DADADA;
+        background-image: url("http://www.pirosfurniture.com/wp-content/uploads/2016/03/woodenwall.jpg"); } }
+    @media (max-width: 768px) {
+      #headerbg-overlay #headerbg {
+        background-image: none;
+        background-color: #000000; } }
+    #headerbg-overlay #headerbg header #branding {
+      background-color: #FF0000;
+      max-width: 320px;
+      padding: 3% 2%;
+      position: relative;
+      z-index: 5; }
+      @media (max-width: 768px) {
+        #headerbg-overlay #headerbg header #branding {
+          margin: 0 auto; } }
+      #headerbg-overlay #headerbg header #branding img {
+        width: 100%;
+        height: auto; }
+      #headerbg-overlay #headerbg header #branding .logo-shadow {
+        background: url("images/headerbg-overlay-shadow.png") no-repeat;
+        width: 11px;
+        height: 16px;
+        position: absolute;
+        top: 0;
+        right: -11px; }
+    #headerbg-overlay #headerbg nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      border-bottom: 1px solid #8C8C8C; }
+    #headerbg-overlay #headerbg #headline {
+      background: rgba(0, 0, 0, 0.8);
+      color: #ffffff;
+      padding: 1em 0; }
+
+/* <id:headerbg-overlay> */
+/* SECTION */
+.page-has-background .overlay-bg {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1em 0; }
+
+/* FOOTER */
+footer {
+  padding: 2% 0px;
+  border-top: 1px solid #D3D9DD; }
+
+#home {
+  display: none;
+  opacity: 0;
+  visibility: hidden; }
+
+/*# sourceMappingURL=style.css.map */

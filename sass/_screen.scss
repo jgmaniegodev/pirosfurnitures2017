@@ -1,0 +1,21 @@
+/* Screen style */
+
+@include breakpoint( 1024px) {
+    #headerbg-overlay {
+        #headerbg {
+            header {
+                #branding {
+                    width: 570px;
+                }
+            }
+            nav {}
+        }
+    }
+    /* <id:headerbg-overlay> */
+    #sale-link {
+        position: absolute;
+        left: 360px;
+        top: 0;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,158 @@
+@import "mixins";
+
+/* default */
+@include breakpoint($desktop){
+    #menu-bar{
+        display: none;
+    }
+#navigation {
+    .inner-container {
+        .primary-nav{
+            display: block !important;
+        }
+        @include breakpoint($desktop) {
+            @include container(1000px);
+            @include layout( 12 0 float);
+        }
+        @include breakpoint( $responsive ) {
+            @include container(100%);
+        }
+        /* Top-level */
+        ul.menu {
+            list-style: none;
+            margin: 0;
+            > li {
+                position: relative;
+                display: inline-block;
+                margin: 0;
+                > a {
+                    color: $white;
+                    display: block;
+                    padding: 24px 8px;
+                    
+                    @include transition( background, .5s);
+                    &:hover {
+                        background: $red;
+                    }
+                    
+                }
+            }
+            >li {
+                display: inline-block;
+            }
+        }
+        .primary-nav {
+            /* widescreem, laptops, etc. */
+            @include breakpoint ( $desktop) {
+                @include span (9 of 12);
+            }
+            @include breakpoint ( 720px 1024px) {
+                @include span (12 of 12);
+            }
+        }
+        .social-media-nav {
+            text-align: right;
+            /* widescreem, laptops, etc. */
+            @include breakpoint ( $desktop) {
+                @include span (3 of 12);
+            }
+            @include breakpoint ( 720px 1024px) {
+                @include span (12 of 12);
+            }
+            .menu{
+                li{
+                    @include span(3 of 12);
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+}
+
+/* Hides navigation links and site footer when infinite scroll is active */
+
+.infinite-scroll #navigation,
+.infinite-scroll.neverending #footer {
+    display: none;
+}
+
+
+/* Shows the footer again in case all posts have been loaded */
+
+.infinity-end.neverending #footer {
+    display: block;
+}
+
+/* Mobile */
+@include breakpoint ( $responsive ) {
+    #menu-bar{
+        display: block;
+        border: none;
+        padding: 12px 0;
+        text-align: center;
+        width: 100%;
+        color: #ffffff;
+        font-size: 22px;
+        background: none;
+        border-bottom: 3px solid #ff0000;
+        outline: none;
+        &.active{
+            background: #ff0000;
+        }
+    }
+    #navigation{
+        .primary-nav{
+            display: none;
+            position: relative;
+            background: #ffffff;
+            max-height: 100%;
+            overflow-y: auto;
+            font-size: 18px;
+            ul.menu{
+                > li {
+                    text-align: center;
+                    a{
+                        padding: 12px 0;
+                        display: block;
+                        border-bottom: 1px solid #fbfbfb;
+                        
+                    }
+                }
+            }
+        }
+    }
+    #social-media-menu{
+        @include container;
+        li{
+            @include span(3 of 12 split);
+            a{
+                padding-top: 16px;
+                padding-bottom: 16px;
+                display: block;
+                text-align: center;
+                width: 100%;
+                font-size: 20px;
+                color: #ffffff;
+                &:hover{
+                    background: #ff0000;
+                }
+            }
+        }
+    }
+    
+    .contact-sidebar{
+        margin-top: 8px;
+        display: block;
+        text-align: center !important;
+        color: #ffffff;
+        p{
+            text-align: center !important;
+        }
+        #flags{
+            margin: 0 auto;
+            float: none;
+        }
+    }
+}

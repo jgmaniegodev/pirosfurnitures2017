@@ -1,0 +1,26 @@
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel],
+input[type=submit],
+textarea{
+    font-family: $default-font;
+    padding: 12px;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+}
+iframe{
+    width: 100%;
+}
+input[type=submit],
+a.button{
+    color: $white;
+    background: #ff0000;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background: #ff6600;
+        
+    }
+}

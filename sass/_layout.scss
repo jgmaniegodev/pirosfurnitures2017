@@ -1,0 +1,159 @@
+@import 'mixins';
+* {
+    box-sizing: border-box;
+}
+#site{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    overflow: hidden;
+
+}
+header { min-height: 100px; }
+nav { min-height: 42px; }
+#page-content { min-height: 500px; }
+aside { }
+footer { min-height: 180px; }
+
+.inner-container{
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    padding: 0px 12px;
+    position: relative;
+    box-sizing: border-box;
+}
+section{
+    padding: 0;
+    @include container;
+}
+.clear:after{
+    display: block;
+    content: " ";
+    height: 0;
+    clear: both;
+}
+
+#service-details{
+    @include span(9 of 12 inside);
+    #service-detail{
+        .service-title{
+            background: #ff0000;
+            color: #ffffff;
+            font-size: 1.3em;
+            text-align: center;
+            padding: 18px 12px;
+            border-bottom: 5px solid #ba0000;
+        }
+        .service-item-container{
+            .service-thumb{
+                
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .service-text{
+                padding: 0px 12px;
+                p{
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}
+
+
+@include breakpoint( $desktop ){
+    .col-5-12{
+        @include span(5 of 12 inside);
+    }
+    .col-7-12{
+        @include span(7 of 12 inside);
+    }
+    .col-6-12{
+        @include span(6 of 12 inside);
+    }
+    
+    #headerbg-overlay{
+        padding-top: 28px;
+    }
+    #branding{
+        
+                top: -16px;
+    }
+    nav{
+        margin-top: -16px;
+    }
+    
+    article{
+        @include container;
+    }
+    .contact-sidebar{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 6;
+        padding: 8px 0;
+        width: 310px;
+    }
+    .services-container{
+        @include container;
+        padding-bottom: 3em;
+        min-height: 500px;
+        .services-menu{
+            @include span(3 of 12 no-gutter);
+            border-right: 2px solid #eeeeee;
+            text-align: right;
+            li{
+                h5{
+                    a{
+                        display: block;
+                        padding: 8px 12px;
+                        color: #000000;
+                        border-right: 3px solid #ffffff;
+                        @include transition('background', 0.5s);
+                        &:hover{
+                            color: #ffffff;
+                            background: #ff0000;
+                            border-color: #ba0000;
+                        }
+                    }
+                }
+            }
+        }
+        #service-details{
+            @include span(9 of 12 inside);
+            #service-detail{
+                .service-title{ }
+                .service-item-container{
+                    .service-thumb{
+                        padding: 0px 12px;
+                        @include span(7 of 12 inside fluid);
+                    }
+                    .service-text{
+
+                        @include span(5 of 12 inside fluid);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(768px 1024px){
+    
+}
+
+@include breakpoint($responsive){
+    #service-details{
+        width: 100%;
+        padding: 12px 0;
+    }
+    #headerbg-overlay{
+        padding-top: 0;
+    }
+    .service-thumb{
+        padding: 0;
+    }
+}

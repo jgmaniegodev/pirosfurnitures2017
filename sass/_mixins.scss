@@ -1,0 +1,4 @@
+@mixin transition( $type, $speed ){
+    -webkit-transition: $type $speed ease-in-out; /* Safari */
+    transition: $type $speed ease-in-out;
+}
