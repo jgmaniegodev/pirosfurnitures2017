@@ -59,3 +59,15 @@
                     </section><!-- closing <section id:headline> -->
                 </div><!-- closing <headerbg> -->
             </div><!-- closing <headerbg-overlay> -->
+            <?php if (is_front_page()) : ?>
+        <div class="promo-area">
+            <div class="inner-container">
+                <?php
+                    $page = get_posts( array( 'name' => 'promo', 'post_type' => 'page', 'publish' => 'published' ) );
+                    if ( $page ){
+                        echo $page[0]->post_content;
+                    }
+                ?>
+            </div>
+        </div>
+        <?php endif; ?>
